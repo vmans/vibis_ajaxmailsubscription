@@ -1,0 +1,55 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<h3>Status</h3>
+ 
+    <f:if condition="{status.error}">
+        <f:then>
+
+            <div class="card bg-danger text-white">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <f:translate key="LLL:EXT:vibis_ajaxmailsubscription/Resources/Private/Language/locallang_db.xlf:JavaScript.error.title" />
+                    </h5>
+                    <ul>
+                    <f:for each="{status.errorMsgs}" as="errorMsg">
+                        <li>{errorMsg}</li>
+                    </f:for>
+                    </ul>
+                </div>
+            </div>
+
+        </f:then>
+        <f:else>  
+
+            <div>
+                <f:for each="{status.msgs}" as="msg">
+                    <li>{msg}</li>
+                </f:for>
+            </div>
+
+        </f:else>  
+    </f:if>
+          
+    <f:if condition="{status.techMsgs} && false">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <h5 class="card-title">
+                    Technical Info:
+                </h5>
+                <ul>
+                <f:for each="{status.techMsgs}" as="techMsg">
+                    <li>{techMsg}</li>
+                </f:for>
+                </ul>
+            </div>
+        </div>
+    </f:if>
+
+
+
+</f:section>
+
+</html>

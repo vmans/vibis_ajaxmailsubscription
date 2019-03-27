@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-01-08T17:14:41Z" product-name="vibis_ajaxmailsubscription">
+		<header/>
+		<body>
+			<trans-unit id="tx_vibis_ajaxmailsubscription_plugkeysubscription.name">
+				<target>Ajax Mail Subscription</target>
+			</trans-unit>
+			<trans-unit id="tx_vibis_ajaxmailsubscription_plugkeysubscription.description">
+				<target></target>
+			</trans-unit>
+			<trans-unit id="flexform.sheet_sDEF">
+				<target>Instellingen</target>
+			</trans-unit>
+			<trans-unit id="flexform.storagePid">
+				<target>Storage Pid to store new records</target>
+			</trans-unit>
+			<trans-unit id="flexform.default_group">
+				<target>Voeg een nieuwe ontvanger toe aan de groep</target>
+			</trans-unit>
+			<trans-unit id="flexform.default_type">
+				<target>Zend HTML e-mail (standaard bij aanmelden)</target>
+			</trans-unit>
+			<trans-unit id="flexform.mail_from">
+				<target>Verzender e-mail</target>
+			</trans-unit>
+			<trans-unit id="flexform.mail_from_name">
+				<target>Verzender naam</target>
+			</trans-unit>
+			<trans-unit id="JavaScript.error.title">
+				<target>Fout(en)</target>
+			</trans-unit>
+			<trans-unit id="JavaScript.error.ajaxError">
+				<target>Sorry maar er ging iets fout: </target>
+			</trans-unit>
+			<trans-unit id="controller.error.invalidEmail">
+				<target>Ongeldige e-mail</target>
+			</trans-unit>
+			<trans-unit id="controller.error.invalidUrl">
+				<target>Ongeldige link</target>
+			</trans-unit>
+			<trans-unit id="controller.error.technicalError">
+				<target>Technische fout. Informeer beheerder.</target>
+			</trans-unit>
+			<trans-unit id="controller.error.authCode">
+				<target>Geen authorisatie. Je kunt de link maar één keer gebruiken. Probeer het door je e-mailadres nog een keer in te voeren.</target>
+			</trans-unit>
+			<trans-unit id="controller.error.authExpired">
+				<target>De tijd om de link te gebruiken is verstreken.</target>
+			</trans-unit>
+			<trans-unit id="controller.error.config.pageUid">
+				<target>Extensie is verkeer geconfigureerd: zet "pageUid" in de constants van deze extensie.</target>
+			</trans-unit>
+
+			<trans-unit id="controller.msg.confirmMailSent">
+				<target>Bevestig je e-mailadres. Er is een mail naar je gestuurd.</target>
+			</trans-unit>
+			<trans-unit id="controller.msg.confirmMailSentOwner">
+				<target>Een mail ter bevestiging is verstuurd.</target>
+			</trans-unit>
+			<trans-unit id="controller.msg.confirmMailSub">
+				<target>Een mail is gestuurd waarin je je aanmeldig kunt bevestigen.</target>
+			</trans-unit>
+
+			<trans-unit id="mail.confirm.subject">
+				<target>Bevestig je aanmelding voor onze nieuwsbrief.</target>
+			</trans-unit>
+			<trans-unit id="mail.confirm.body">
+				<target>Ga naar %1 om je aanmelding te bevestigen.</target>
+			</trans-unit>
+			<trans-unit id="mail.auth.subject">
+				<target>E-mail voorkeuren update</target>
+			</trans-unit>
+			<trans-unit id="mail.auth.body">
+				<target>Ga naar %1s voor authenticatie.</target>
+			</trans-unit>
+
+			<trans-unit id="action.start.email">
+				<target>E-mail</target>
+			</trans-unit>
+			<trans-unit id="action.start.gender">
+				<target>Gender</target>
+			</trans-unit>
+			<trans-unit id="action.start.firstname">
+				<target>Voornaam</target>
+			</trans-unit>
+			<trans-unit id="action.start.middle_name">
+				<target>Tussenvoegsel</target>
+			</trans-unit>
+			<trans-unit id="action.start.last_name">
+				<target>Achternaam</target>
+			</trans-unit>
+			<trans-unit id="action.start.subscribed_chkbox">
+				<target>Aangemeld of afgemeld</target>
+			</trans-unit>
+			<trans-unit id="action.start.htmlemail">
+				<target>Vormgegeven e-mails ontvangen?</target>
+			</trans-unit>
+			<trans-unit id="action.start.btn_update">
+				<target>Update</target>
+			</trans-unit>
+			<trans-unit id="action.start.btn_subscribe">
+				<target>Aanmelden of afmelden</target>
+			</trans-unit>
+
+
+
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-01-08T17:14:41Z" product-name="vibis_ajaxmailsubscription">
+		<header/>
+		<body>
+			<trans-unit id="tx_vibis_ajaxmailsubscription_plugkeysubscription.name">
+				<source>Ajax Mail Subscription</source>
+			</trans-unit>
+			<trans-unit id="tx_vibis_ajaxmailsubscription_plugkeysubscription.description">
+				<source></source>
+			</trans-unit>
+			<trans-unit id="flexform.sheet_sDEF">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="flexform.storagePid">
+				<source>Storage Pid to stored new records</source>
+			</trans-unit>
+			<trans-unit id="flexform.default_group">
+				<source>Add new recipient to group</source>
+			</trans-unit>
+			<trans-unit id="flexform.default_type">
+				<source>Send HTML email (default on subscription)</source>
+			</trans-unit>
+			<trans-unit id="flexform.mail_from">
+				<source>Mail from email</source>
+			</trans-unit>
+			<trans-unit id="flexform.mail_from_name">
+				<source>Mail from name</source>
+			</trans-unit>
+			<trans-unit id="JavaScript.error.title">
+				<source>Error(s)</source>
+			</trans-unit>
+			<trans-unit id="JavaScript.error.ajaxError">
+				<source>Sorry but there was an error: </source>
+			</trans-unit>
+			<trans-unit id="controller.error.invalidEmail">
+				<source>Invalid email</source>
+			</trans-unit>
+			<trans-unit id="controller.error.invalidUrl">
+				<source>Url is not valid</source>
+			</trans-unit>
+			<trans-unit id="controller.error.technicalError">
+				<source>Technical error. Infrom admin</source>
+			</trans-unit>
+			<trans-unit id="controller.error.authCode">
+				<source>Invalid authorization. You may url the only once. Try resubmitting your email</source>
+			</trans-unit>
+			<trans-unit id="controller.error.authExpired">
+				<source>The time to use the url has expired.</source>
+			</trans-unit>
+			<trans-unit id="controller.error.config.pageUid">
+				<source>Extension configuration error: Please set "pageUid" in constants of this extension first.</source>
+			</trans-unit>
+
+			<trans-unit id="controller.msg.confirmMailSent">
+				<source>Please confirm you email. Confirmation email sent.</source>
+			</trans-unit>
+			<trans-unit id="controller.msg.confirmMailSentOwner">
+				<source>Confirmation email sent to confirm your ownership</source>
+			</trans-unit>
+			<trans-unit id="controller.msg.confirmMailSub">
+				<source>Confirmation email sent to confirm you subscribtion</source>
+			</trans-unit>
+
+			<trans-unit id="mail.confirm.subject">
+				<source>Email subscription confirmation</source>
+			</trans-unit>
+			<trans-unit id="mail.confirm.body">
+				<source>To confirm your subscription please go to %1</source>
+			</trans-unit>
+			<trans-unit id="mail.auth.subject">
+				<source>Email preference update</source>
+			</trans-unit>
+			<trans-unit id="mail.auth.body">
+				<source>To authenticate please go to %1s</source>
+			</trans-unit>
+
+			<trans-unit id="action.start.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="action.start.gender">
+				<source>Gender</source>
+			</trans-unit>
+			<trans-unit id="action.start.firstname">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="action.start.middle_name">
+				<source>Middle Name</source>
+			</trans-unit>
+			<trans-unit id="action.start.last_name">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="action.start.subscribed_chkbox">
+				<source>(Un)Subscribed</source>
+			</trans-unit>
+			<trans-unit id="action.start.htmlemail">
+				<source>HTML email ? </source>
+			</trans-unit>
+			<trans-unit id="action.start.btn_update">
+				<source>Update</source>
+			</trans-unit>
+			<trans-unit id="action.start.btn_subscribe">
+				<source>(Un) Subscribe</source>
+			</trans-unit>
+
+
+
+		</body>
+	</file>
+</xliff>

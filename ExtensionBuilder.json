@@ -1,0 +1,50 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 8.7.0-9.3.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "8.7.0-8.7.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "vibis_ajaxmailsubscription",
+        "name": "Vibis Ajax Mail Subscription",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "Vibis",
+                "email": "info@vibis.nl",
+                "name": "Vincent Mans",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Subscription=>start,add",
+                    "noncacheableActions": "Subscription=>add",
+                    "switchableActions": ""
+                },
+                "description": "",
+                "key": "plugkeysubscription",
+                "name": "Ajax Mail Subscription"
+            }
+        ],
+        "vendorName": "Vibis"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2019-01-08 05:14",
+        "extension_builder_version": "8.10.2",
+        "be_user": " (1)"
+    }
+}

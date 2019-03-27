@@ -1,0 +1,146 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="main">
+    <script>
+        /*error codes and texts*/
+        var vibis_ajaxmailsubscription_errors = new Array();
+        vibis_ajaxmailsubscription_errors['ajaxError'] = '<f:translate key="LLL:EXT:vibis_ajaxmailsubscription/Resources/Private/Language/locallang_db.xlf:JavaScript.error.ajaxError" />';
+        var popUpTimeInterval = {settings.popUpTime} * 1000; 
+    </script>
+
+    <div id="vibisAjaxmailsubscription_errors"></div>
+
+    <div id="vibisAjaxmailsubscription_ajaxResponse">
+
+        <f:if condition="{status.error}">
+            <f:then>
+                <div class="card bg-danger text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <f:translate key="LLL:EXT:vibis_ajaxmailsubscription/Resources/Private/Language/locallang_db.xlf:JavaScript.error.title" />
+                        </h5>
+                        <ul>
+                        <f:for each="{status.errorMsgs}" as="errorMsg">
+                            <li>{errorMsg}</li>
+                        </f:for>
+                        </ul>
+                    </div>
+                </div>
+            </f:then>
+            <f:else>  
+
+                <f:if condition="{status.msgs}">
+                    <div class="card bg-info text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Info:
+                            </h5>
+                            <ul>
+                            <f:for each="{status.msgs}" as="msg">
+                                <li>{msg}</li>
+                            </f:for>
+                            </ul>
+                        </div>
+                    </div>
+                </f:if>
+
+                <f:if condition="{edit}">
+                <f:then>                   
+
+                    <br>
+                    <form name="vibisAjaxmailsubscription_form" id="vibisAjaxmailsubscription_form" >
+                        <f:translate key="LLL:EXT:vibis_ajaxmailsubscription/Resources/Private/Language/locallang_db.xlf:action.start.email" />: {email}                        
+                        <input type="hidden" name="u" value="{u}"/>
+                        <input type="hidden" name="a" value="{a}"/>
+                        <input type="hidden" name="t" value="{t}"/>
+                        <input type="hidden" name="p" value="update"/>
+
+                        <br><f:translate key="LLL:EXT:vibis_ajaxmailsubscription/Resources/Private/Language/locallang_db.xlf:action.start.gender" />: 
+                        <select name="gender">
+                            <f:if condition="{gender} == m">
+                            <f:then>
+                                    <option value="m" selected>Male</option>
+                            </f:then>
+                            <f:else>
+                                    <option value="m">Male</option>
+                            </f:else>
+                            </f:if>                           
+                            <f:if condition="{gender} == f">
+                            <f:then>
+                                    <option value="f" selected>Female</option>
+                            </f:then>
+                            <f:else>
+                                    <option value="f">Female</option>
+                            </f:else>
+                            </f:if>                           
+                        </select>
+
+                        <br>
+                        <f:translate key="LLL:EXT:vibis_ajaxmailsubscription/Resources/Private/Language/locallang_db.xlf:action.start.firstname" />: 
+                        <input type="text" name="first_name" value="{first_name}"/>    
+
+                        <br>
+                        <f:translate key="LLL:EXT:vibis_ajaxmailsubscription/Resources/Private/Language/locallang_db.xlf:action.start.middle_name" />:  
+                        <input type="text" name="middle_name" value="{middle_name}"/>    
+
+                        <br>
+                        <f:translate key="LLL:EXT:vibis_ajaxmailsubscription/Resources/Private/Language/locallang_db.xlf:action.start.last_name" />:  
+                        <input type="text" name="last_name" value="{last_name}"/>    
+                        
+                        <br>
+                        <f:translate key="LLL:EXT:vibis_ajaxmailsubscription/Resources/Private/Language/locallang_db.xlf:action.start.subscribed_chkbox" />:                       
+                        <input type="checkbox" value="1" name="subscription" {subscription}>
+                        
+                        <br>
+                        <f:translate key="LLL:EXT:vibis_ajaxmailsubscription/Resources/Private/Language/locallang_db.xlf:action.start.htmlemail" />? 
+                        <input type="checkbox" value="1" name="html" {html}>
+        
+                        <br><input type="button" name="submit" 
+                            value="<f:translate key="LLL:EXT:vibis_ajaxmailsubscription/Resources/Private/Language/locallang_db.xlf:action.start.btn_update" />" 
+                            id="vibisAjaxmailsubscription_btn"
+                            data-ajaxUrl="<f:format.raw><f:uri.action pageUid="{settings.pageUid}" action="start" pageType="110001" /></f:format.raw>"                 
+                            />
+                    </form>
+        
+                </f:then>
+                <f:else>
+
+                    <form name="vibisAjaxmailsubscription_form" id="vibisAjaxmailsubscription_form" >
+                        <input type="email" name="email" value="" placeholder="E-mail" />            
+                        <input type="button" name="submit" 
+                            value="<f:translate key="LLL:EXT:vibis_ajaxmailsubscription/Resources/Private/Language/locallang_db.xlf:action.start.btn_subscribe" />" 
+                            id="vibisAjaxmailsubscription_btn"
+                            data-ajaxUrl="<f:format.raw><f:uri.action pageUid="{settings.pageUid}" action="status" pageType="110001" /></f:format.raw>"                 
+                            />
+                    </form>
+        
+                </f:else>
+                </f:if>            
+
+            </f:else>              
+        </f:if>
+
+        <f:if condition="{status.techMsgs} && false">
+            <div class="card bg-info text-white">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Technical Info:
+                    </h5>
+                    <ul>
+                    <f:for each="{status.techMsgs}" as="techMsg">
+                        <li>{techMsg}</li>
+                    </f:for>
+                    </ul>
+                </div>
+            </div>
+        </f:if>
+
+    </div>
+
+
+
+</f:section>
+
+</html>
+

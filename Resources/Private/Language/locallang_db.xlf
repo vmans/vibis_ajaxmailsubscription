@@ -7,7 +7,7 @@
 				<source>Ajax Mail Subscription</source>
 			</trans-unit>
 			<trans-unit id="tx_vibis_ajaxmailsubscription_plugkeysubscription.description">
-				<source></source>
+				<source>Subscription to tt_address.</source>
 			</trans-unit>
 			<trans-unit id="flexform.sheet_sDEF">
 				<source>Settings</source>

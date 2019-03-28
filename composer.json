@@ -1,15 +1,30 @@
 {
     "name": "vibis/vibis-ajaxmailsubscription",
     "type": "typo3-cms-extension",
-    "description": "",
+    "description": "Subscription to tt_address, e.g. for direct_mail. With unsubscribe, popup and cookie handling.",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "subscribe",
+        "addresses",
+        "newsletter",
+        "direct_mail"
+    ],
+    "homepage": "https://www.vibis.nl/typo3-service/extensies/vibis-ajax-mail-subscription/",
     "authors": [
         {
             "name": "Vincent Mans",
             "role": "Developer"
         }
     ],
+    "license": "GPL-2.0-or-later",
     "require": {
-        "typo3/cms-core": "^8.7.1"
+        "typo3/cms-core": "^8.7 || ^9.5"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "vibis_ajaxmailsubscription"
+        }
     },
     "autoload": {
         "psr-4": {

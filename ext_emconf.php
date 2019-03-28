@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Vibis Ajax Mail Subscription',
-    'description' => '',
+    'description' => 'Subscription to tt_address, e.g. for direct_mail. With unsubscribe, popup and cookie handling.',
     'category' => 'plugin',
     'author' => 'Vincent Mans',
     'author_email' => 'info@vibis.nl',
@@ -20,7 +20,7 @@ $EM_CONF[$_EXTKEY] = [
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '2.0.2',
+    'version' => '2.0.3',
     'constraints' => [
         'depends' => [
             'typo3' => '8.7.0-9.5.99',

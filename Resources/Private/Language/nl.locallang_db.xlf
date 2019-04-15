@@ -59,14 +59,14 @@
 				<target>Een mail ter bevestiging is verstuurd.</target>
 			</trans-unit>
 			<trans-unit id="controller.msg.confirmMailSub">
-				<target>Een mail is gestuurd waarin je je aanmeldig kunt bevestigen.</target>
+				<target>Een mail is gestuurd waarin je je aanmelding kunt bevestigen.</target>
 			</trans-unit>
 
 			<trans-unit id="mail.confirm.subject">
 				<target>Bevestig je aanmelding voor onze nieuwsbrief.</target>
 			</trans-unit>
 			<trans-unit id="mail.confirm.body">
-				<target>Ga naar %1 om je aanmelding te bevestigen.</target>
+				<target>Ga naar %1s om je aanmelding te bevestigen.</target>
 			</trans-unit>
 			<trans-unit id="mail.auth.subject">
 				<target>E-mail voorkeuren update</target>
